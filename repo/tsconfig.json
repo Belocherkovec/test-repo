@@ -1,8 +1,4 @@
 {
-  "compilerOptions": {
-    "noEmit": true,
-    "incremental": false,
-  },
   "files": [],
   "references": [
     {
