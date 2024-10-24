@@ -3,12 +3,20 @@ import { resolve } from 'path';
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
-  // base: "/test-repo",
-  plugins: [react()],
-  resolve: {
-    alias: {
-      '@': resolve('src')
-    }
-  },
+export default defineConfig(({ command }) => {
+  let base = "/";
+
+  if (command === 'build') {
+    base = "/test-repo";
+  }
+
+  return {
+    base,
+    plugins: [react()],
+    resolve: {
+      alias: {
+        '@': resolve('src')
+      }
+    },
+  }
 })
