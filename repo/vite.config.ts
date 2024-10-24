@@ -4,10 +4,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => {
-  let base = "/";
+  let base = '/';
 
   if (command === 'build') {
-    base = "/test-repo";
+    base = '/test-repo';
   }
 
   return {
