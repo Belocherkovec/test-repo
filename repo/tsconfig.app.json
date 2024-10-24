@@ -9,6 +9,7 @@
     ],
     "module": "ESNext",
     "skipLibCheck": true,
+    "baseUrl": "/test-repo",
     "paths": {
       "@/*": [
         "./src/*"

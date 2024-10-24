@@ -7,7 +7,7 @@ export default defineConfig(({ command }) => {
   let base = "/";
 
   if (command === 'build') {
-    base = "/test-repo/repo";
+    base = "/test-repo";
   }
 
   return {
